@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #4CAF50;
+    color: rgb(71, 197, 33);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Background Styling for the Homepage */
+  body.home {
+    background: linear-gradient(to right, rgba(255, 183, 77, 0.8), rgba(255, 140, 157, 0.8)), 
+      url('assets/homepage-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(243, 247, 248);
+  }
+  
+  .banner {
+    position: relative;
+    text-align: center;
+    color: rgb(138, 17, 17);
+    font-size: larger;
+    
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    color: rgba(230, 193, 72, 0.945);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .banner button {
+    padding: 10px 20px;
+    background-color: rgb(245, 241, 241);
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .features {
+    padding: 20px;
+  }
+  
+  .features h2 {
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .features-grid div {
+    text-align: center;
+    width: 300px;
+  }
+  
+  .features-grid div img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background: #333;
+    color: rgb(250, 247, 247);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .product img, .cart-item img, .wishlist-item img {
+    width: 150px;  /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Maintains aspect ratio, fills space */
+  }
+  #product-list {
+    display: flex;           /* Use Flexbox for layout */
+    flex-wrap: wrap;         /* Allow wrapping to the next line if needed */
+    justify-content: center; /* Center products horizontally */
+    align-items: center;     /* Center products vertically (if container has height) */
+    gap: 20px;               /* Add spacing between products */
+    padding: 20px;           /* Optional: Adds padding around the container */
+  }
+  
+  .product {
+    text-align: center;      /* Center-align text inside each product card */
+    border: 1px solid #ddd;  /* Optional: Add border for product cards */
+    padding: 10px;           /* Add padding inside the product card */
+    border-radius: 8px;      /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    width: 200px;            /* Set a fixed width for the product cards */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f6f6;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+/* Center-align the entire wishlist and cart section */
+.wishlist, .cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Take full screen height */
+  padding: 20px;
+  background-color: #f5f5f5; /* Optional background color */
+  gap: 20px; /* Space between items */
+  margin: 0; /* Remove any default margins */
+}
+
+/* Styling individual wishlist and cart items */
+.wishlist-item, .cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 200px;
+  transition: transform 0.2s; /* Add a hover effect */
+}
+
+.wishlist-item:hover, .cart-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling images in wishlist and cart */
+.wishlist-item img, .cart-item img {
+  width: 150px; /* Adjust image size */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
